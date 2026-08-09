@@ -1,69 +1,38 @@
-# CMPS 3600 – Operating Systems  
-**California State University, Bakersfield – Spring 2025**  
-**Instructor:** Professor Gordon Griesel  
-**Course Schedule:**  
-- Lecture: MWF 11:00 AM – 11:50 AM (Room SCI III-240)  
-- Lab: Thursdays 10:00 AM – 12:30 PM (Room SCI III-240)
+# CMPS 3600
 
-## 🧠 Course Overview
-CMPS 3600 explored the foundational components of operating systems with a strong emphasis on C programming, concurrency, process management, and memory systems. Labs and projects were completed on Linux systems using the Odin server, with a focus on real-world systems programming practices.
+Operating-systems coursework in C, Linux systems programming, concurrency, memory, scheduling, and security.
 
-## �� Topics Covered
-| Week | Chapter(s) | Topic |
-|------|------------|-------|
-| Week 1 | 1–2 | OS Overview |
-| Week 2 | 1–2 | Historical Development |
-| Week 3 | 3 | Process Description & Control |
-| Week 4 | 4 | Principles of Threaded Programs |
-| Week 5 | 4 | SMP & Microkernels |
-| Week 6 | 5 | Principles of Concurrency |
-| Week 7 | 5 | Semaphores |
-| Week 8 | 6 | Deadlock & Starvation |
-| Week 9 | 6 | Linux Kernel Concurrency |
-| Week 10 | 7 | Memory Management |
-| Week 11 | 8 | Virtual Memory |
-| Week 12 | 9 | Uni-Processor Scheduling Algorithms |
-| Week 13 | 10 | Real-Time Scheduling |
-| Week 14 | 11 | I/O Scheduling |
-| Week 15 | 15 | Security Issues |
-| Week 16 | — | Final Exam & Review |
+[![C](https://img.shields.io/badge/C-systems%20programming-A8B9CC?style=flat-square&logo=c&logoColor=black)](https://en.wikipedia.org/wiki/C_(programming_language))
 
-## 🧪 Labs and Semester Project
-- Labs were conducted weekly in-person using C on Linux systems.
-- Topics included:
-  - Signal handling
-  - Interprocess communication (IPC)
-  - System V semaphores
-  - Multithreading and synchronization
-  - Dining philosophers
-  - Virtual memory and memory mapping
-  - Unix pipes and scheduling
-- **Semester Project**: A multi-phase C programming assignment that applied concurrency, memory handling, and system calls (`execve`, semaphores, scheduling logic).
+## Course context
 
-## 📘 Textbooks
-- *Operating Systems: Internals and Design Principles* (9th Ed.) – William Stallings  
-- *The C Programming Language* (2nd Ed.) – Kernighan & Ritchie *(optional)*  
-- *The Linux Programming Interface* – Michael Kerrisk *(optional)*
+The repository preserves labs and semester-project work for CMPS 3600 at California State University, Bakersfield, Spring 2025. The original course notes identify Linux/Odin, GCC, GDB, Unix utilities, and Makefiles as the working environment.
 
-## 💡 Student Learning Outcomes
-- OS concepts: history, design principles, concurrency, scheduling, memory management, security
-- CE/CS ABET-aligned outcomes in analysis, design, experimentation, and system-level programming
+## Contents
 
-## 📝 Skills Gained
-- Mastery of low-level C for OS-level programming
-- Understanding of process/thread management and IPC
-- Implementation of concurrency control (mutexes, semaphores)
-- Exposure to Linux scheduling, memory layout, and system calls
-- Development of clean, ANSI C-style code
+Numbered directories and lettered directories contain lab and project phases. Topics represented by the source include file I/O, processes, signals, interprocess communication, System V message queues and shared memory, semaphores, POSIX threads, mutexes, dining philosophers, pipes, memory mapping, page faults, and scheduling-related exercises.
 
-## 💻 Languages Used
-- C
+- `1/`–`7/`, `9/`, `a/`–`e/` — lab and phase source files
+- `Makefile` files — directory-specific build definitions
+- `lab-start.sh` and `lab-fix.sh` — repository scripts
 
-## 🧑‍💻 Tech Stack
-- **OS**: Linux (Odin Server)  
-- **Tools**: GCC, GDB, Unix utilities, Makefiles  
-- **Concepts Practiced**: Concurrency, Signals, Memory Mapping, Scheduling, I/O, Security
+Compiled binaries and logs are also committed in several directories; they are preserved course artifacts, not required source dependencies.
 
-## 🧪 Final Exam
-- Written exam: 5/7 at 11:00 AM (10 questions, closed notes)  
-- Online quiz: 5/8 at 10:00 AM (10 questions, open book)
+## Usage
+
+Build from an individual lab directory with that directory's Makefile. For example:
+
+```bash
+cd 1
+make
+```
+
+The exact targets vary by directory. Review the local Makefile and source comments before running programs, especially exercises that create IPC objects or write files.
+
+## Status and academic note
+
+This is coursework and lab material, not a supported operating-systems library. Some directories contain platform-specific or historical binaries, so builds may require a compatible Linux toolchain.
+
+## Attribution
+
+Course and instructor details are retained from the repository's original documentation. No license is declared in this checkout.
