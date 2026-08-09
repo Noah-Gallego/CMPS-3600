@@ -2,7 +2,9 @@
 
 Operating-systems coursework in C, Linux systems programming, concurrency, memory, scheduling, and security.
 
-[![C](https://img.shields.io/badge/C-systems%20programming-A8B9CC?style=flat-square&logo=c&logoColor=black)](https://en.wikipedia.org/wiki/C_(programming_language))
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=c,cpp&theme=light" alt="C and C++" />
+</p>
 
 ## Course context
 
