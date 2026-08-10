@@ -10,6 +10,10 @@ Operating-systems coursework in C, Linux systems programming, concurrency, memor
 
 The repository preserves labs and semester-project work for CMPS 3600 at California State University, Bakersfield, Spring 2025. The original course notes identify Linux/Odin, GCC, GDB, Unix utilities, and Makefiles as the working environment.
 
+## Media
+
+No visual preview is included; the repository is systems-programming coursework composed of C/C++ source, Makefiles, binaries, and logs.
+
 ## Tech stack
 
 C and C++ systems programming with POSIX/Linux APIs, GCC, GDB, Unix utilities, and Make.
