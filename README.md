@@ -42,3 +42,16 @@ This is coursework and lab material, not a supported operating-systems library. 
 ## Attribution
 
 Course and instructor details are retained from the repository's original documentation. No license is declared in this checkout.
+
+> [!NOTE]
+> Each numbered or lettered directory has its own build assumptions; inspect its local Makefile before compiling or running an exercise.
+
+## Lab workflow
+
+```mermaid
+flowchart LR
+    A[C or C++ source] --> B[Directory Makefile]
+    B --> C[Linux toolchain]
+    C --> D[Lab executable]
+    D --> E[Systems exercise output]
+```
